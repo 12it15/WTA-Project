@@ -1,5 +1,5 @@
 function countEventHandlers(){
- 
+ var getscripts= document.scripts.length;
 var elements = document.getElementsByTagName("*"), len = elements.length,
      counter = 0,
      countermap = [],
@@ -30,5 +30,6 @@ for ( var o in countermap ) {
    someStats += o + " was found " + countermap[o] + " times\n";
 }
 alert(someStats);
- 
+
+ alert(getscripts);
 }
